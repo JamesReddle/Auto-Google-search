@@ -253,7 +253,7 @@ namespace RequestAutoV1.Controllers
         {
             ViewBag.Title = "Home Page";
             //******************Словарь русского языка***************************************************************************
-            /*string dictionary = System.IO.File.ReadAllText(@"E:\All_kind_of_programmes\HTTPS_request_without_Js\dictionary.txt");
+            /*string dictionary = System.IO.File.ReadAllText(@"E:\All_kind_of_programmes\HTTPS_request_without_Js\Auto-Google-search\Auto-Google-search\RequestAutoV1\App_Data\dictionary.txt");
             Regex FindRecodrs = new Regex(@"(\d+)\s[а-яА-я]+");
             MatchCollection Records = FindRecodrs.Matches(dictionary);
             for(int i = 0; i<1000; i++)
@@ -269,7 +269,7 @@ namespace RequestAutoV1.Controllers
             //htmlParcer("стол");
 
             //*********************Таблица Excel*************************************************************************
-            string FilePath = @"E:\All_kind_of_programmes\HTTPS_request_without_Js\decomposition_08.07.2018_16.54.xlsx";
+            string FilePath = @"E:\All_kind_of_programmes\HTTPS_request_without_Js\Auto-Google-search\Auto-Google-search\RequestAutoV1\App_Data\decomposition_08.07.2018_16.54.xlsx";
             FileInfo existingFile = new FileInfo(FilePath);
             using (ExcelPackage package = new ExcelPackage(existingFile))
             {
