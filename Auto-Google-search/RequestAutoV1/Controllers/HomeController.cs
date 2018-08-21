@@ -269,7 +269,8 @@ namespace RequestAutoV1.Controllers
             //htmlParcer("стол");
 
             //*********************Таблица Excel*************************************************************************
-            string FilePath = @"E:\All_kind_of_programmes\HTTPS_request_without_Js\Auto-Google-search\Auto-Google-search\RequestAutoV1\App_Data\decomposition_08.07.2018_16.54.xlsx";
+            //string FilePath = @"E:\All_kind_of_programmes\HTTPS_request_without_Js\Auto-Google-search\Auto-Google-search\RequestAutoV1\App_Data\decomposition_08.07.2018_16.54.xlsx";
+            string FilePath = ControllerContext.HttpContext.Server.MapPath("~/App_Data/decomposition_08.07.2018_16.54.xlsx");
             FileInfo existingFile = new FileInfo(FilePath);
             using (ExcelPackage package = new ExcelPackage(existingFile))
             {
